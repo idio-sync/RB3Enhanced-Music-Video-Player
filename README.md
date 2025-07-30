@@ -3,10 +3,23 @@ This script listens for RB3Enhanced network events and automatically searches fo
 the chosen song using yt-dlp and VLC media player. I use this on a laptop hooked up to a second TV where we pick 
 songs using the RBEnhanced web page.  
 
+It searches for "(artist) (song) official music video" "(artist) (song) music video" and "(artist) (song) official"
+in that order and picks the top result based on relevency as well as song length if song database is provided (see 
+below). If a music video is not avalable, it will play an audio version that usually just has album art as the image.
+
 Requirements:
 ```
 pip install google-api-python-client yt-dlp
 ```
+## Screenshots
+
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/bb011aa5-625e-4eb8-bb39-9c67e129825f" />
+
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/e34b21e0-6c15-4f69-bc41-53a0139cd43d" />
+
+
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/851e720f-9556-45b5-85dc-8d26c9950a4a" />
+
 ## Instructions
 1. Get a YouTube Data API v3 key from Google Cloud Console and enter the key in the Settings tab
 2. Load optional song database JSON for better song syncing

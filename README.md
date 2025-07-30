@@ -3,7 +3,7 @@ This script listens for RB3Enhanced network events and automatically searches fo
 the chosen song using yt-dlp and VLC media player. I use this on a laptop hooked up to a second TV where we pick 
 songs using the RBEnhanced web page.  
 
-###Requirements:
+Requirements:
 ```
 pip install google-api-python-client yt-dlp
 ```

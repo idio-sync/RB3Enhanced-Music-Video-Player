@@ -17,8 +17,7 @@ pip install google-api-python-client yt-dlp
 
 <img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/e34b21e0-6c15-4f69-bc41-53a0139cd43d" />
 
-
-<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/851e720f-9556-45b5-85dc-8d26c9950a4a" />
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/f5c54c7d-877a-414c-bf14-6f2b592b509a" />
 
 ## Instructions
 1. Get a YouTube Data API v3 key from Google Cloud Console and enter the key in the Settings tab

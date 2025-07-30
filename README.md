@@ -7,14 +7,68 @@ Requirements:
 ```
 pip install google-api-python-client yt-dlp
 ```
-## GUI Version Instructions
+## Instructions
 1. Get a YouTube Data API v3 key from Google Cloud Console and enter the key in the Settings tab
-2. Configure your video and sync preferences
-3. Make sure VLC Media Player is installed
-4. In RB3Enhanced config [Events] section, ensure:
+2. Load optional song database JSON for better song syncing
+3. Configure your video and sync preferences  
+4. Make sure VLC Media Player is installed
+5. In RB3Enhanced config [Events] section, ensure:
 ```
 EnableEvents = true
 BroadcastTarget = 255.255.255.255
 ```
 6. Click "Start Listening" 
-7. Launch Rock Band 3 and play a song!
+7. Launch Rock Band 3 and play a song
+
+## Optional Song Database
+You can also provide a JSON dump of your RB3 song cache to better match track lengths to videos in
+order for them to sync better. To do this the RB3 song cache file needs to be loaded into Nautilis
+and exported with the following settings to include track lengths:
+
+<img width="526" height="436" alt="image" src="https://github.com/user-attachments/assets/29e323fa-6a25-4873-834b-c36f8361b511" />
+
+JSON example:
+```
+{
+"setlist":
+[
+{
+"artist" : "\"Weird Al\" Yankovic",
+"name" : "Gump",
+"vocal_parts" : 2,
+"duration" : "2:17",
+"drums_diff" : "4",
+"bass_diff" : "3",
+"guitar_diff" : "3",
+"keys_diff" : "0",
+"vocal_diff" : "3",
+"rating" : "SR",
+"genre" : "Novelty",
+"album" : "Bad Hair Day",
+"track_number" : 7,
+"master" : true,
+"year_recorded" : 1996,
+"year_released" : 1996,
+"subgenre" : "",
+"proguitar_diff" : "0",
+"probass_diff" : "0",
+"prokeys_diff" : "0",
+"band_diff" : "3",
+"shortname" : "Gumpv3",
+"songid" : 2133037298,
+"songid_string" : "",
+"source" : "ugc_plus",
+"filepath" : "songs/Gump/Gump",
+"midifile" : "",
+"preview_start" : 16000,
+"preview_end" : 46000,
+"version" : 30,
+"scroll_speed" : 2300,
+"tonic_note" : -1,
+"tonality" : -1,
+"percussion_bank" : "sfx/tambourine_bank.milo",
+"drum_bank" : "sfx/kit01_bank.milo",
+"bass_tuning" : "",
+"guitar_tuning" : ""
+}
+```

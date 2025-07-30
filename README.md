@@ -25,7 +25,7 @@ You can also provide a JSON dump of your RB3 song cache to better match track le
 order for them to sync better. To do this the RB3 song cache file needs to be loaded into Nautilis
 and exported with the following settings to include track lengths:
 
-<img width="526" height="436" alt="image" src="https://github.com/user-attachments/assets/29e323fa-6a25-4873-834b-c36f8361b511" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/29e323fa-6a25-4873-834b-c36f8361b511" />
 
 JSON example:
 ```
